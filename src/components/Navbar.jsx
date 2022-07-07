@@ -30,6 +30,32 @@ const Nav = styled.nav`
       span {
         margin-left: 0.5rem;
         color: #41ff07;
+        letter-spacing: 0.2rem;
+        font-family: "Permanent Marker", cursive;
+      }
+    }
+  }
+  .search {
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 8rem 1rem 1rem;
+    border-radius: 1rem;
+    svg {
+      color: #41ff07;
+    }
+    input {
+      background-color: transparent;
+      border: none;
+      color: #41ff07;
+      font-family: "Permanent Marker", cursive;
+      letter-spacing: 0.3rem;
+      &::placeholder {
+        color: #41ff07;
+      }
+      &:focus {
+        outline: none;
       }
     }
   }
