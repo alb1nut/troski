@@ -21,4 +21,16 @@ const Navbar = () => {
 
 export default Navbar;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  .title {
+    h1 {
+      span {
+        margin-left: 0.5rem;
+        color: #41ff07;
+      }
+    }
+  }
+`;
