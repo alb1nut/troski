@@ -1,11 +1,10 @@
-import React from 'react'
+import React from "react";
+import styled from "styled-components";
 
 const Analytics = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <Section></Section>;
+};
 
-export default Analytics
+export default Analytics;
+
+const Section = styled.section``;
