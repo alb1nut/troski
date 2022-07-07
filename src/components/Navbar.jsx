@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="title">
         <h4>Hi Albert</h4>
         <h1>
-          Welcome to <span>TROSKI DASHBOARD</span>
+          Welcome to your<span>TROSKI DASHBOARD</span>
         </h1>
       </div>
       <div className="search">
