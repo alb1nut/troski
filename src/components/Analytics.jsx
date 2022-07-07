@@ -28,20 +28,20 @@ const Analytics = () => {
         </div>
       </div>
       <div className="analytic">
-        <div className="content">
+        <div className="logo">
           <BiGroup />
         </div>
-        <div className="logo">
+        <div className="content">
           <h5>New Clients</h5>
           <h2>400</h2>
         </div>
       </div>
       <div className="analytic">
-        <div className="logo">
-          <h5>Activity</h5>
-          <h2>Ghc799</h2>
-        </div>
         <div className="content">
+          <h5>Activity</h5>
+          <h2>Ghc550.60</h2>
+        </div>
+        <div className="logo">
           <FiActivity />
         </div>
       </div>
@@ -51,4 +51,35 @@ const Analytics = () => {
 
 export default Analytics;
 
-const Section = styled.section``;
+const Section = styled.section`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  .analytic {
+    ${cardStyle};
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background-color: #41ff07;
+      color: #000;
+      svg {
+        color: #fff;
+      }
+    }
+    .logo {
+      background-color: #000;
+      border-radius: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+  }
+`;
