@@ -23,7 +23,7 @@ const Sidebar = () => {
           <div className="toggle"></div>
           <div className="links">
             <ul>
-              <li>
+              <li className="active">
                 <a href="#">
                   <MdSpaceDashboard />
                   <span>Dashboard</span>
@@ -109,6 +109,38 @@ const Section = styled.section`
         font-size: 2rem;
         color: #41ff07;
         font-family: "Permanent Marker", cursive;
+      }
+    }
+    .links {
+      display: flex;
+      justify-content: center;
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li {
+          padding: 0.6rem 1rem;
+          border-radius: 0.6rem;
+          &:hover {
+            background-color: #41ff07;
+            a {
+              color: #000;
+            }
+          }
+          a {
+            text-decoration: none;
+            display: flex;
+            gap: 1rem;
+            color: #fff;
+          }
+        }
+        .active {
+          background-color: #41ff07;
+          a {
+            color: #000;
+          }
+        }
       }
     }
   }
