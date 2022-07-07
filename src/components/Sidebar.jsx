@@ -58,7 +58,7 @@ const Sidebar = () => {
               >
                 <a href="#">
                   <GiTwirlCenter />
-                  <span>Learning Center</span>
+                  <span>Information</span>
                 </a>
               </li>
               <li
@@ -162,6 +162,20 @@ const Section = styled.section`
           }
         }
       }
+    }
+  }
+  .logout {
+    padding: 0.3rem 1rem;
+    border-radius: 0.6rem;
+    &:hover {
+      background-color: #da0037;
+    }
+    a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #fff;
     }
   }
 `;
