@@ -12,6 +12,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
 
 const Sidebar = () => {
+  const [currentLink, setCurrentLink] = useState(1);
+
   return (
     <>
       <Section>
@@ -23,37 +25,55 @@ const Sidebar = () => {
           <div className="toggle"></div>
           <div className="links">
             <ul>
-              <li className="active">
+              <li
+                onClick={() => setCurrentLink(1)}
+                className={currentLink === 1 ? "active" : ""}
+              >
                 <a href="#">
                   <MdSpaceDashboard />
                   <span>Dashboard</span>
                 </a>
               </li>
-              <li>
+              <li
+                onClick={() => setCurrentLink(2)}
+                className={currentLink === 2 ? "active" : ""}
+              >
                 <a href="#">
                   <RiDashboard2Fill />
                   <span>Drivers</span>
                 </a>
               </li>
-              <li>
+              <li
+                onClick={() => setCurrentLink(3)}
+                className={currentLink === 3 ? "active" : ""}
+              >
                 <a href="#">
                   <FaAddressCard />
                   <span>Payment Details</span>
                 </a>
               </li>
-              <li>
+              <li
+                onClick={() => setCurrentLink(4)}
+                className={currentLink === 4 ? "active" : ""}
+              >
                 <a href="#">
                   <GiTwirlCenter />
                   <span>Learning Center</span>
                 </a>
               </li>
-              <li>
+              <li
+                onClick={() => setCurrentLink(5)}
+                className={currentLink === 5 ? "active" : ""}
+              >
                 <a href="#">
                   <BsFillChatTextFill />
                   <span>FAQs</span>
                 </a>
               </li>
-              <li>
+              <li
+                onClick={() => setCurrentLink(6)}
+                className={currentLink === 6 ? "active" : "null"}
+              >
                 <a href="#">
                   <IoSettings />
                   <span>Settings</span>
