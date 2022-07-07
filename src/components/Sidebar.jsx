@@ -18,7 +18,7 @@ const Sidebar = () => {
         <div className="top">
           <div className="brand">
             <FaTaxi />
-            <span>My Troski</span>
+            <span>Troski</span>
           </div>
           <div className="toggle"></div>
           <div className="links">
@@ -75,4 +75,41 @@ const Sidebar = () => {
 
 export default Sidebar;
 
-const Section = styled.section``;
+const Section = styled.section`
+  position: fixed;
+  left: 0;
+  background-color: #212121;
+  height: 100vh;
+  width: 18vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: spacebetween;
+  padding: 2rem 0;
+  gap: 2rem;
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    .toggle {
+      display: none;
+    }
+    .brand {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      svg {
+        color: #41ff07;
+        font-size: 2rem;
+      }
+      span {
+        font-size: 2rem;
+        color: #41ff07;
+        font-family: "Permanent Marker", cursive;
+      }
+    }
+  }
+`;
