@@ -36,7 +36,7 @@ const Transfers = () => {
             <div className="transaction" key={index}>
               <div className="transaction__title">
                 <div className="transaction__title__image">
-                  <img src={transaction.image} alt="transaction image" />
+                  <img src={transaction.image} alt="transaction" />
                 </div>
                 <div className="transaction__title__details">
                   <h3>{transaction.name}</h3>
@@ -50,7 +50,7 @@ const Transfers = () => {
           );
         })}
       </div>
-      <a href="#" className="view">
+      <a href="/#" className="view">
         View all <HiArrowNarrowRight />
       </a>
     </Section>

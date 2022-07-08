@@ -68,7 +68,7 @@ export default function Sidebar() {
                 className={currentLink === 1 ? "active" : "none"}
                 onClick={() => setCurrentLink(1)}
               >
-                <a href="#">
+                <a href="/#">
                   <MdSpaceDashboard />
                   <span> Dashboard</span>
                 </a>
@@ -77,7 +77,7 @@ export default function Sidebar() {
                 className={currentLink === 2 ? "active" : "none"}
                 onClick={() => setCurrentLink(2)}
               >
-                <a href="#">
+                <a href="/#">
                   <RiDashboard2Fill />
                   <span> Riders</span>
                 </a>
@@ -86,7 +86,7 @@ export default function Sidebar() {
                 className={currentLink === 3 ? "active" : "none"}
                 onClick={() => setCurrentLink(3)}
               >
-                <a href="#">
+                <a href="/#">
                   <FaAddressCard />
                   <span> Payment Details</span>
                 </a>
@@ -95,7 +95,7 @@ export default function Sidebar() {
                 className={currentLink === 4 ? "active" : "none"}
                 onClick={() => setCurrentLink(4)}
               >
-                <a href="#">
+                <a href="/#">
                   <GiTwirlCenter />
                   <span> Information</span>
                 </a>
@@ -104,7 +104,7 @@ export default function Sidebar() {
                 className={currentLink === 5 ? "active" : "none"}
                 onClick={() => setCurrentLink(5)}
               >
-                <a href="#">
+                <a href="/#">
                   <BsFillChatTextFill />
                   <span> FAQs</span>
                 </a>
@@ -113,7 +113,7 @@ export default function Sidebar() {
                 className={currentLink === 6 ? "active" : "none"}
                 onClick={() => setCurrentLink(6)}
               >
-                <a href="#">
+                <a href="/#">
                   <IoSettings />
                   <span> Settings</span>
                 </a>
@@ -122,7 +122,7 @@ export default function Sidebar() {
           </div>
         </div>
         <div className="logout">
-          <a href="#">
+          <a href="/#">
             <FiLogOut />
             <span className="logout">Logout</span>
           </a>
@@ -135,7 +135,7 @@ export default function Sidebar() {
               className={currentLink === 1 ? "active" : "none"}
               onClick={() => setCurrentLink(1)}
             >
-              <a href="#">
+              <a href="/#">
                 <MdSpaceDashboard />
                 <span> Dashboard</span>
               </a>
@@ -144,7 +144,7 @@ export default function Sidebar() {
               className={currentLink === 2 ? "active" : "none"}
               onClick={() => setCurrentLink(2)}
             >
-              <a href="#">
+              <a href="/#">
                 <RiDashboard2Fill />
                 <span> Riders</span>
               </a>
@@ -153,7 +153,7 @@ export default function Sidebar() {
               className={currentLink === 3 ? "active" : "none"}
               onClick={() => setCurrentLink(3)}
             >
-              <a href="#">
+              <a href="/#">
                 <FaAddressCard />
                 <span> Payment Details</span>
               </a>
@@ -162,7 +162,7 @@ export default function Sidebar() {
               className={currentLink === 4 ? "active" : "none"}
               onClick={() => setCurrentLink(4)}
             >
-              <a href="#">
+              <a href="/#">
                 <GiTwirlCenter />
                 <span> Information</span>
               </a>
@@ -171,7 +171,7 @@ export default function Sidebar() {
               className={currentLink === 5 ? "active" : "none"}
               onClick={() => setCurrentLink(5)}
             >
-              <a href="#">
+              <a href="/#">
                 <BsFillChatTextFill />
                 <span> FAQs</span>
               </a>
@@ -180,7 +180,7 @@ export default function Sidebar() {
               className={currentLink === 6 ? "active" : "none"}
               onClick={() => setCurrentLink(6)}
             >
-              <a href="#">
+              <a href="/#">
                 <IoSettings />
                 <span> Settings</span>
               </a>

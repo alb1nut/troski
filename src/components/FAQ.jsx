@@ -16,7 +16,7 @@ const FAQ = () => {
       text: "How to regulate transactions over time",
     },
     {
-      icon: <AiFillCalendar />,
+      icon: <IoMdCash />,
       text: "Withdrawing money through an ATM",
     },
   ];
