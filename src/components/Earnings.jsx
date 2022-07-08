@@ -6,24 +6,24 @@ import { cardStyle } from "./ReusableStyles";
 const data = [
   { data: 2500 },
   { data: 3500 },
+  { data: 2700 },
   { data: 4500 },
   { data: 5500 },
-  { data: 6500 },
+  { data: 5000 },
+  { data: 6000 },
   { data: 7500 },
+  { data: 7700 },
+  { data: 7000 },
+  { data: 8000 },
   { data: 8500 },
+  { data: 8400 },
+  { data: 7500 },
+  { data: 8900 },
   { data: 9500 },
-  { data: 10500 },
-  { data: 11500 },
-  { data: 12500 },
-  { data: 12500 },
-  { data: 13500 },
-  { data: 14500 },
-  { data: 15500 },
-  { data: 16500 },
-  { data: 17500 },
-  { data: 18500 },
-  { data: 19500 },
-  { data: 20500 },
+  { data: 9100 },
+  { data: 11000 },
+  { data: 10100 },
+  { data: 11000 },
 ];
 const Earnings = () => {
   return (
@@ -64,4 +64,44 @@ const Earnings = () => {
 
 export default Earnings;
 
-const Section = styled.section``;
+const Section = styled.section`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 20rem;
+  ${cardStyle}
+  padding: 2rem 0 0 0;
+  .top {
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      h1 {
+        font: 2rem;
+      }
+      .growth {
+        background-color: #d7e41e1d;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        transition: 0.3s ease-in-out;
+        &:hover {
+          background-color: #41ff07;
+          span {
+            color: #000;
+          }
+        }
+        span {
+          color: #41ff07;
+        }
+      }
+    }
+  }
+  .chart {
+    height: 70%;
+    .recharts-default-tooltip {
+      background-color: #000 !important;
+      border-color: #000 !important;
+    }
+  }
+`;
