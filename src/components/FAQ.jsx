@@ -26,8 +26,8 @@ const FAQ = () => {
         <h2>Information for Drivers</h2>
       </div>
       <div className="faqs">
-        {faqs.map((faq) => (
-          <div className="faq">
+        {faqs.map((faq, index) => (
+          <div className="faq" key={index}>
             <div className="info">
               {faq.icon}
               <h4>{faq.text}</h4>
