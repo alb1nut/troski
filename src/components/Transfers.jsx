@@ -140,4 +140,13 @@ const Section = styled.section`
       }
     }
   }
+  @media screen and (min-width: 280px) and (max-width: 375px) {
+    .transactions {
+      .transaction {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+  }
 `;

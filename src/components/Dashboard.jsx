@@ -1,22 +1,41 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
-import FAQ from "./FAQ";
 import Analytics from "./Analytics";
+import Earnings from "./Earnings";
+import FAQ from "./FAQ";
+import Navbar from "./Navbar";
 import Profile from "./Profile";
 import Transfers from "./Transfers";
-import Earnings from "./Earnings";
-
-const Dashboard = () => {
+import scrollreveal from "scrollreveal";
+export default function Dashboard() {
+  useEffect(() => {
+    const sr = scrollreveal({
+      origin: "bottom",
+      distance: "80px",
+      duration: 2000,
+      reset: false,
+    });
+    sr.reveal(
+      `
+        nav,
+        .row__one,
+        .row__two
+    `,
+      {
+        opacity: 0,
+        interval: 100,
+      }
+    );
+  }, []);
   return (
     <Section>
       <Navbar />
       <div className="grid">
-        <div className="row_one">
+        <div className="row__one">
           <Analytics />
           <FAQ />
         </div>
-        <div className="row_two">
+        <div className="row__two">
           <Earnings />
           <Transfers />
           <Profile />
@@ -24,9 +43,7 @@ const Dashboard = () => {
       </div>
     </Section>
   );
-};
-
-export default Dashboard;
+}
 
 const Section = styled.section`
   margin-left: 18vw;
@@ -38,17 +55,17 @@ const Section = styled.section`
     height: 100%;
     gap: 1rem;
     margin-top: 2rem;
-    .row_one {
+    .row__one {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       height: 50%;
       gap: 1rem;
     }
-    .row_two {
+    .row__two {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      height: 50%;
       gap: 1rem;
+      height: 50%;
     }
   }
   @media screen and (min-width: 280px) and (max-width: 1080px) {

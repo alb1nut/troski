@@ -104,4 +104,6 @@ const Section = styled.section`
       border-color: #000 !important;
     }
   }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+  }
 `;

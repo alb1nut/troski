@@ -53,6 +53,7 @@ const Nav = styled.nav`
       letter-spacing: 0.3rem;
       &::placeholder {
         color: #41ff07;
+        font-family: "Permanent Marker", cursive;
       }
       &:focus {
         outline: none;

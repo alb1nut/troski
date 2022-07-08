@@ -164,7 +164,7 @@ export default function Sidebar() {
             >
               <a href="#">
                 <GiTwirlCenter />
-                <span> Learning Center</span>
+                <span> Information</span>
               </a>
             </li>
             <li
@@ -208,6 +208,7 @@ const Section = styled.section`
     flex-direction: column;
     gap: 2rem;
     width: 100%;
+
     .toggle {
       display: none;
     }
@@ -260,6 +261,7 @@ const Section = styled.section`
       }
     }
   }
+
   .logout {
     padding: 0.3rem 1rem;
     border-radius: 0.6rem;
