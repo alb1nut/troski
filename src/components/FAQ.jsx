@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { IoIosArrowForward } from "react-icons/io";
+import { AiFillCalendar } from "react-icons/ai";
 import { MdTimelapse } from "react-icons/md";
 import { IoMdCash } from "react-icons/io";
-import { AiFillCalendar } from "react-icons/ai";
 import { cardStyle } from "./ReusableStyles";
 const FAQ = () => {
   const faqs = [
@@ -20,7 +20,26 @@ const FAQ = () => {
       text: "Withdrawing money through an ATM",
     },
   ];
-  return <div></div>;
+  return (
+    <Section>
+      <div className="title">
+        <h2>Information for Drivers</h2>
+      </div>
+      <div className="faqs">
+        {faqs.map((faq) => (
+          <div className="faq">
+            <div className="info">
+              {faq.icon}
+              <h4>{faq.text}</h4>
+            </div>
+            <IoIosArrowForward />
+          </div>
+        ))}
+      </div>
+    </Section>
+  );
 };
 
 export default FAQ;
+
+const Section = styled.section``;
