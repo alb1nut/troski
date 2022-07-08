@@ -1,18 +1,17 @@
 import React from "react";
 import styled from "styled-components";
-import { cardStyle } from "./ReusableStyles";
 import { BsFillCalendar2WeekFill } from "react-icons/bs";
 import { IoStatsChart } from "react-icons/io5";
 import { BiGroup } from "react-icons/bi";
 import { FiActivity } from "react-icons/fi";
-
-const Analytics = () => {
+import { cardStyle } from "./ReusableStyles";
+export default function Analytics() {
   return (
     <Section>
-      <div className="analytic">
+      <div className="analytic ">
         <div className="content">
           <h5>Spent this month</h5>
-          <h2>Ghc799</h2>
+          <h2>$682.5</h2>
         </div>
         <div className="logo">
           <BsFillCalendar2WeekFill />
@@ -24,7 +23,7 @@ const Analytics = () => {
         </div>
         <div className="content">
           <h5>Earnings</h5>
-          <h2>Ghc350</h2>
+          <h2>$350.40</h2>
         </div>
       </div>
       <div className="analytic">
@@ -32,14 +31,14 @@ const Analytics = () => {
           <BiGroup />
         </div>
         <div className="content">
-          <h5>New Clients</h5>
-          <h2>400</h2>
+          <h5>New clients</h5>
+          <h2>321</h2>
         </div>
       </div>
-      <div className="analytic">
+      <div className="analytic ">
         <div className="content">
           <h5>Activity</h5>
-          <h2>Ghc550.60</h2>
+          <h2>$540.50</h2>
         </div>
         <div className="logo">
           <FiActivity />
@@ -47,10 +46,7 @@ const Analytics = () => {
       </div>
     </Section>
   );
-};
-
-export default Analytics;
-
+}
 const Section = styled.section`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -65,13 +61,13 @@ const Section = styled.section`
     transition: 0.5s ease-in-out;
     &:hover {
       background-color: #41ff07;
-      color: #000;
+      color: black;
       svg {
-        color: #fff;
+        color: white;
       }
     }
     .logo {
-      background-color: #000;
+      background-color: black;
       border-radius: 3rem;
       display: flex;
       justify-content: center;
@@ -79,6 +75,15 @@ const Section = styled.section`
       padding: 1.5rem;
       svg {
         font-size: 1.5rem;
+      }
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 720px) {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    .analytic {
+      &:nth-of-type(3),
+      &:nth-of-type(4) {
+        flex-direction: row-reverse;
       }
     }
   }
