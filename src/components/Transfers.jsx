@@ -25,7 +25,33 @@ const Transfers = () => {
       amount: "+Ghc200",
     },
   ];
-  return <Section></Section>;
+  return (
+    <Section>
+      <div className="title">
+        <h2>Your Transfers</h2>
+      </div>
+      <div className="transactions">
+        {transactions.map((transaction) => {
+          return (
+            <div className="transaction">
+              <div className="transaction__title">
+                <div className="transaction__title__image">
+                  <img src="{transaction.image}" alt="transaction image" />
+                </div>
+                <div className="transaction__title__details">
+                  <h3>{transaction.name}</h3>
+                  <h5>{transaction.time}</h5>
+                </div>
+              </div>
+              <div className="tranaction__amount">
+                <span>{transaction.amount}</span>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </Section>
+  );
 };
 
 export default Transfers;
