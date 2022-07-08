@@ -9,15 +9,15 @@ const FAQ = () => {
   const faqs = [
     {
       icon: <AiFillCalendar />,
-      text: "How to manage time and get good marks for a trips",
+      text: "Meeting with all drivers on Saturday 8:00pm",
     },
     {
       icon: <MdTimelapse />,
-      text: "How to regulate transactions over time",
+      text: "Copies of IDs to be submitted by Drivers",
     },
     {
       icon: <IoMdCash />,
-      text: "Withdrawing money through an ATM",
+      text: "New Payment mode through Mobile Money",
     },
   ];
   return (
